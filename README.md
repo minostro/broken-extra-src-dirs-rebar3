@@ -15,8 +15,8 @@ This is the content of `rebar.config`:
 
 {profiles, [
 	    {test, [
-		    {extra_src_dirs, ["test"]},
-		    {erl_opts, [debug_info]}
+		    {erl_opts, [debug_info,
+		    	        {extra_src_dirs, ["test"]}]}
 		   ]}
 	   ]}.
 ```
